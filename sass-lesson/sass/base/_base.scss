@@ -1,0 +1,21 @@
+body {
+    // background-color: $main-color;
+}
+
+h1 {
+    // Utilisation d'un placeholder
+    @extend %title;
+    font-size: 45px;
+    color: $main-color-dark;
+}
+
+h2 {
+    // Utilisation d'un placeholder
+    @extend %title;
+    color: $main-color;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
