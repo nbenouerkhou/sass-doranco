@@ -1,0 +1,54 @@
+.hero {
+    @include section(300px, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+
+    h1 {
+        color: $main-cl;
+    }
+}
+
+.cards {
+    background-color: pink;
+    @include section(600px, 20px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: $border-radius;
+    width: 300px;
+    height: 550px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+
+    img {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius ;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 430px;
+    padding: 20px;
+}
+
+.content h2 {
+    text-align: center;
+}

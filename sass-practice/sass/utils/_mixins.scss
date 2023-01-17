@@ -1,0 +1,6 @@
+@mixin section($height, $padding){
+    min-height: $height;
+    width: 80%;
+    margin: auto;
+    padding: $padding;
+}
